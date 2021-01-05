@@ -20,6 +20,9 @@
 		067EECE02593E58300C1C173 /* ligacaoTelefonica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EECDF2593E58300C1C173 /* ligacaoTelefonica.swift */; };
 		067EECE22593EA8100C1C173 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EECE12593EA8100C1C173 /* Safari.swift */; };
 		067EECE42593EB7300C1C173 /* Filtro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EECE32593EB7300C1C173 /* Filtro.swift */; };
+		069A132D25A4ACC100902BD2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 069A132C25A4ACC100902BD2 /* GoogleService-Info.plist */; };
+		06C14FE225A4D500007F701F /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C14FE125A4D500007F701F /* Firebase.swift */; };
+		06C14FE425A4DBCD007F701F /* Configuracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C14FE325A4DBCD007F701F /* Configuracao.swift */; };
 		06F9B61F25937BAF00788224 /* AlunoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B61E25937BAF00788224 /* AlunoAPI.swift */; };
 		658B1AA82006456B006D944C /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658B1AA72006456B006D944C /* AutenticacaoLocal.swift */; };
 		65F277D520068C1900A8F1BF /* icon_caelum.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F277D420068C1900A8F1BF /* icon_caelum.png */; };
@@ -50,6 +53,9 @@
 		067EECDF2593E58300C1C173 /* ligacaoTelefonica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ligacaoTelefonica.swift; sourceTree = "<group>"; };
 		067EECE12593EA8100C1C173 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		067EECE32593EB7300C1C173 /* Filtro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtro.swift; sourceTree = "<group>"; };
+		069A132C25A4ACC100902BD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		06C14FE125A4D500007F701F /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		06C14FE325A4DBCD007F701F /* Configuracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracao.swift; sourceTree = "<group>"; };
 		06F9B61E25937BAF00788224 /* AlunoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoAPI.swift; sourceTree = "<group>"; };
 		1BBCC6440BA83EB6BC51E9BD /* Pods_Agenda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658B1AA72006456B006D944C /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
@@ -103,12 +109,14 @@
 				03AA17621FC8433E003CB2B8 /* Home */,
 				03AA17691FC84A2D003CB2B8 /* Alunos */,
 				B9FFD44E1FDEE6D300CEE593 /* Mapa */,
+				06C14FDF25A4D4D9007F701F /* Firebase */,
 				A28100181FD5C2E300E1BDF1 /* Componentes */,
 				65F277D320068C1900A8F1BF /* Assets */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
 				03AA175C1FC84154003CB2B8 /* Info.plist */,
+				069A132C25A4ACC100902BD2 /* GoogleService-Info.plist */,
 				03AA17541FC84154003CB2B8 /* Agenda.xcdatamodeld */,
 			);
 			path = Agenda;
@@ -155,6 +163,22 @@
 				03AA176C1FC8515A003CB2B8 /* AlunoViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		06C14FDF25A4D4D9007F701F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				06C14FE025A4D4E4007F701F /* Model */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		06C14FE025A4D4E4007F701F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06C14FE125A4D500007F701F /* Firebase.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		06F9B61D25937B9A00788224 /* Model */ = {
@@ -204,6 +228,7 @@
 				067EECDF2593E58300C1C173 /* ligacaoTelefonica.swift */,
 				067EECE12593EA8100C1C173 /* Safari.swift */,
 				067EECE32593EB7300C1C173 /* Filtro.swift */,
+				06C14FE325A4DBCD007F701F /* Configuracao.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -304,6 +329,7 @@
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
 				65F277D520068C1900A8F1BF /* icon_caelum.png in Resources */,
+				069A132D25A4ACC100902BD2 /* GoogleService-Info.plist in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
@@ -338,10 +364,28 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Agenda/Pods-Agenda-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstanceID.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C14FE225A4D500007F701F /* Firebase.swift in Sources */,
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
 				06F9B61F25937BAF00788224 /* AlunoAPI.swift in Sources */,
 				65F277D92006901C00A8F1BF /* Pino.swift in Sources */,
@@ -368,6 +413,7 @@
 				067EECE22593EA8100C1C173 /* Safari.swift in Sources */,
 				B9518EFC1FD9BCEB00EBAFA5 /* MenuOpcoesAlunos.swift in Sources */,
 				B939B9B81FDAC2630084A557 /* Mensagem.swift in Sources */,
+				06C14FE425A4DBCD007F701F /* Configuracao.swift in Sources */,
 				B9D565A71FE14ECA00BDA536 /* Notificacoes.swift in Sources */,
 				067EECDC2593907900C1C173 /* Repositorio.swift in Sources */,
 				B9FFD4511FDEE6F700CEE593 /* MapaViewController.swift in Sources */,
